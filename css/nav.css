@@ -1,0 +1,76 @@
+/* 页眉区和导航区统一采用浮动布局，将其固定在每个页面的最上端 */
+
+/* 凝胶布局的关键 */
+div.inner {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 页眉区，设置背景图片的样式 */
+div#header {
+    height: 56px;
+    background-image: url(../image/index_2.jpg);
+    background-repeat: repeat-x;
+}
+
+/* 导航区 */
+div#nav {
+    height: 38px;
+    background-color: #e394d0;
+    text-align: center;
+    font-size: larger;
+    width:100%;
+    margin-top:-20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#nav ul{
+    /* 清除ul标签的默认样式，宽度也改为自动 */
+    width: auto;
+    height: auto;
+    margin-left: 2%;
+    /* 去掉小圆点 */
+    list-style-type: none;
+    overflow: hidden;
+    white-space:nowrap;
+    /* 字体居中设置 */
+    text-align: center;
+    padding: 0;
+}
+
+div#nav li {
+    /* 使li内容横向浮动，即横向排列  */
+    float:left; 
+    /* 设置两个li之间的距离*/
+    margin-right:8%;  
+    margin-left: 8%;
+    position: auto;
+    overflow: hidden;
+}
+
+/* 设置链接内容显示的格式*/
+div#nav li a{
+    /* 把链接显示为块元素可使整个链接区域可点击 */
+    display: block; 
+    color:white;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    /* 去除下划线 */
+    text-decoration: none; 
+}
+
+/* 设置鼠标选中时背景变为黑色 */
+div#nav li a:hover{
+    background-color: #111;
+}
+
+/* 设置二级菜单 */
+div#nav ul li ul{
+    margin-left: -0.2px;
+    background:rgb(189, 181, 181);
+    position: relative;
+     /* 默认隐藏二级菜单的内容 */
+    display: none;
+}

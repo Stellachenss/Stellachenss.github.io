@@ -1,0 +1,63 @@
+/* 简历页采用凝胶布局，结合运用了div盒子模型块状摆放 */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 50px;
+    background-color: #fef8fc;
+}
+
+/* 凝胶布局的关键 */
+div.inner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color:black;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 华文行楷;
+    margin: 20px;
+}
+
+
+div#excel {
+    margin-left: 30px;
+}
+
+table {
+    border:1;
+    background-color: #e2eaf3;
+}
+
+td {
+    border: 1px #1a599d solid;
+    padding: 10px;
+    margin: 20px;
+    width:110px;
+    height:25px;
+}
+
+div#excel div.inner table img {
+    width:110px;
+    height:160px;
+}
+
+/* 设置文字居中 */
+.ceenter {
+    text-align: center;
+}
+
+/* 给标题栏设置样式，包括字体的居中加粗和字间距扩大、字体变大 */
+.title {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+    background-color: #a1b0c1;
+}

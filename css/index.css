@@ -1,0 +1,80 @@
+/* 主页采用的是凝胶布局，运用公共类固定宽度，同样是属于浮动布局，不过同时结合了盒模型布局 */
+
+body {
+    margin: 0;
+    padding: 0;
+    /* 设置背景图片，并设置单张平铺页面不重复 */
+    background-image: url(../image/index_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 50px;
+}
+
+/* 凝胶布局的关键 */
+div.inner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 内容区 */
+div#container_1 {
+    height:400px;
+    width:100%;
+}
+
+/* 设置图片圆形框，设置img标签 */
+div#container_1 img {
+    width: 250px;
+    height: 250px;
+    margin: 120px 0 0 62%;
+    border-radius: 100px;
+    /* 设置图片位于最顶层，绝对定位，不受透明cont所影响 */
+    position: absolute;
+    float: left;
+    z-index:3;
+}
+
+div#container_1 div.inner div#cont1 {
+    width: 1000px;
+    height: 400px;
+    float:left;
+    margin-top: 50px;
+    /* 透明度 */
+    opacity: 0.6;
+    background-color: #fff;
+}
+
+div#container_1 div.inner div#cont1_1 {
+    width: 700px;
+    height: 400px;
+    margin:50px 100px 0 0;
+    /* 设置位于最顶层，绝对定位，不受透明cont所影响 */
+    float:left;
+    position: absolute;
+    z-index:3;
+    /* 文字居中 */
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    font-family:Comic Sans MS;
+    margin:40px 0 30px 20px;
+    color: #e98686;
+}
+
+.intro_1{
+    font-size: 22px;
+    font-family:华文行楷;
+    font-weight:normal;
+    color:#603838;
+}
+
+.intro_2{
+    margin-top: 20px;
+    /* 字体调整 */
+    font-size: 32px;
+    font-family:Segoe Script;
+    font-weight:bold;
+}

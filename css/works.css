@@ -1,0 +1,84 @@
+/* 凝胶布局+div盒模型 */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f9f8ed;
+}
+
+div.inner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color:black;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 华文行楷;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div#container_1 {
+    height:276px;
+    padding: 25px 0 25px 0;
+    background-color: #dcdad2;
+}
+
+/* 用样式类去定义所有链接字体的样式 */
+div.boody a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.9;
+    margin: 5px;
+    text-decoration: none; 
+}
+
+div#container_1 div.inner div#cont1_1 {
+    width: 640px;
+    height: 272px;
+    float: left;
+    background-color: #fff;
+    border-top: 4px solid #85754d;
+}
+
+div#container_1 div.inner div#cont1_2 {
+    width: 360px;
+    height: 272px;
+    float: left;
+    background-color: #e8e0cd;
+    border-top: 4px solid #b89a53;
+}
+
+/* no */
+div#container_2 {
+    height: 780px;
+    background: #7f7c74 url(/image/travel_2.jpeg) no-repeat center;
+    border-bottom: 6px solid #e394d0;
+}
+
+div#container_2 div.inner div#cont2_1 {
+    width: 500px;
+    height: 680px;
+    float: left;
+    background-color: #f1efe3;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+div#container_2 div.inner div#cont2_2 {
+    width: 468px;
+    height: 680px;
+    float: left;
+    background-color: #f1efe3;
+    margin-top: 50px;
+    margin-left: 32px;
+}
